@@ -1,13 +1,17 @@
 import random as r
-a= r.randint(0,100)
-for i in range(6):
-             b=int(input("请输入一个0到100的正整数："))
-             if b<a:
-                          print("猜小了，共10次机会，还剩{}次".format(5-i))
-             elif b>a:
-                          print("猜大了，共10次机会，还剩{}次".format(5-i))
+a= r.randint(0,100)#随机产生一个0到100的整数
+for i in range(10):
+             b=int(input("请输入一个0到100的正整数："))#用户获取一个输入
+             if b>=0 and b<=100:
+                          if b<a:
+                                       print("猜小了，共10次机会，还剩{}次".format(9-i))
+                          elif b>a:
+                                       print("猜大了，共10次机会，还剩{}次".format(9-i))
+                          elif b==a:
+                                       print("恭喜您，猜对了，该数字为{}".format(a))
+                                       break
              else:
-                          print("猜对了，该数字为{}".format(a))
+                          print("您并没有输入0到100的整数，浪费了一次机会")
              while i == 9:
                           print("机会已用尽，您并没有猜出数字，游戏结束")
                           break
