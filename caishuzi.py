@@ -1,5 +1,6 @@
-import random as r
-a= r.randint(0,100)#随机产生一个0到100的整数
+import random as r    # 这里最好不要引入后改名，别人看不懂了
+
+a= r.randint(0,100)#随机产生一个0到100的整数    # 通篇缩进有问题。建议缩进四个空格，不要用tab键盘
 for i in range(10):
              b=input("请输入一个0到100的正整数：")#用户获取一个输入
              if b.isnumeric():
