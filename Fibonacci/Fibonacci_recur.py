@@ -1,5 +1,4 @@
-#-*-   coding:utf-8   -*-
-'''
+# -*-   coding:utf-8   -*-
 递归法求斐波那契数列
 '''
 fib_seq = []
@@ -13,4 +12,4 @@ for i in range(a+1):
         else:
             return f(i-1)+f(i-2)
     fib_seq.append(f(i))
-print(f'斐波那契数列的前{a}项为：{fib_seq}')
+print(f'斐波那契数列的前{a}项为：{fib_seq}')'''
