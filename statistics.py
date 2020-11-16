@@ -33,7 +33,7 @@ print(f'随机生成的Ge(0.2)样本的均值与方差分别为{geometric(0.2)}'
 '''
 随机生成指数分布数据据并求样本期望和方差
 '''
-def exponential(lamda):
+def exponential(lamda):   ## 避免使用lambda为参数名称，因为在python里面，lambda是一个关键词，参见lambda函数
     random_4 = np.random.exponential(lamda, 100)
     mean = np.mean(random_4)
     var = np.var(random_4)
